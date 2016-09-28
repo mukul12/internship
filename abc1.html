@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+<style type="text/css">
+.myclass1{
+	height: 60px;
+	width: 200px;
+	border-color: black;
+	border-style: solid;
+	border-radius: 80px 80px 80px 80px;
+	position: relative;
+	top:18px;left:5px;
+	border-color: #d3d3d3;
+	font-size: 20px;
+	}
+	.myclass1:hover,
+	.myclass1:focus
+	{
+		background-color: #65CDF0;
+		color:#ffffe6;
+	}
+	.myclass2{
+		position:relative;
+		top:15px;left:5px;
+		color:#696969;
+		font-size:20px;
+
+	}
+	.myclass2:hover,
+	.myclass2:focus{
+		color:#ffffe6;
+	}
+
+	.inlineclass{
+		display:inline-block;
+
+	}
+	
+	#b12{
+		display: none;
+	}
+	#b13{
+		display: none;
+	}
+	#b14{
+		display: none;
+	}
+
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.closebtn {
+    padding-left: 10px;
+    color: #888;
+    font-weight: bold;
+    
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: #000;
+}
+.inlineclass1{
+  display:inline;
+}
+#txtbox1{
+	display: none;
+
+}
+</style>
+
+	<title></title>
+</head>
+<body>
+ 
+  
+    
+</div> 
+
+<div style="position:relative; top:50px; left:120px"><form id="form1" enctype="appl">
+	<input type="text" id="txtbox1">
+	<div contenteditable="true" style="width:1000px; height:40px; border-style: none none solid none;
+    border-color: #d3d3d3; font-size:25px; display:inline-block" id="Content"><span id="span4">Enter Service Request...</span><span class=" closebtn" id="span1" style="position:relative;bottom:10px"></span></div>
+    <button style="border: none ;" id="subBut1" ><span style=" color: #808080 ;padding: 15px 32px; text-decoration: none; display: inline-block; font-size: 16px;display:inline-block; ">Submit</span></button>
+ 	<p style="padding:50px"></p>
+ 	
+ 	<div id="b11" >
+ 	<h6> Please select your type of <b>request</b>:</h6>
+ 	<div class="myclass1 inlineclass" id="b1" ">  <input type="radio" name="rad1" id="r1" value="Furniture Repair" class="myclass2"><label for="r1" style="position:relative;top:11px;left:12px;cursor:pointer;" class="myclass2" value="Furniture Repair" > Furniture Repair</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b2" ">  <input type="radio" name="rad1" id="r2" value="Plumbing Issue" class="myclass2"><label for="r2" style="position:relative;top:11px;left:12px;cursor:pointer;" class="myclass2" value="Plumbing Issue"> Plumbing Issue</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b3"  ">  <input type="radio" name="rad1" id="r3" value="Electrical Issue" class="myclass2"><label for="r3" style="position:relative;top:11px;left:12px;cursor:pointer;" class="myclass2" value="Electrical Issue"> Electrical Issue</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b4"  ">  <input type="radio" name="rad1" id="r4" value="Internet Issue" class="myclass2"><label for="r4" style="position:relative;top:11px;left:12px;cursor:pointer;" class="myclass2" value="Internet Issue"> Internet Issue</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b5"  ">  <input type="radio" name="rad1" id="r5" value="DTH/Cable Issue" class="myclass2"><label for="r5" style="position:relative;top:11px;left:12px;cursor:pointer;" class="myclass2" value="DTH/Cable Issue"> DTH/Cable Issue</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	</div>
+ 	<div id="b12">
+ 	<h6>Please select your type of <b>issue</b>:</h6>
+ 	<div class="myclass1 inlineclass" id="b1" >  <input type="radio" name="rad2" id="r11" value="Issue With Bed" class="myclass2"><label for="r11" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Issue With Bed"> Issue With Bed</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b2" >  <input type="radio" name="rad2" id="r12" value="Issue With Wardrobe" class="myclass2"><label for="r12" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Issue With Wardrobe"> Issue With Wardrobe</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b3" >  <input type="radio" name="rad2" id="r13" value="Issue With Mattress" class="myclass2"><label for="r13" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Issue With Mattress"> Issue With Mattress</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b4" >  <input type="radio" name="rad2" id="r14" value="Issue With Side Table" class="myclass2"><label for="r14" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Issue With Side Table"> Issue With Side Table</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b5" >  <input type="radio" name="rad2" id="r15" value="Issue With Sofa Set" class="myclass2"><label for="r15" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Issue With Sofa Set"> Issue With Sofa Set</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	</div>
+ 	<div id="b13">
+ 	<h6>Please select your type of <b>Priority</b>:</h6>
+ 	<div class="myclass1 inlineclass" id="b1" >  <input type="radio" name="rad3" id="r21" value="High Priority" class="myclass2"><label for="r21" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="High Priority"> High Priority</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b2" >  <input type="radio" name="rad3" id="r22" value="Fix it Asap" class="myclass2"><label for="r22" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Fix it Asap"> Fix it Asap</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	<div class="myclass1 inlineclass" id="b3" >  <input type="radio" name="rad3" id="r23" value="Not Bothering, needs fixing" class="myclass2"><label for="r23" style="position:relative;top:11px;left:9px;cursor:pointer;" class="myclass2" value="Not Bothering"> Fix needed</label></div><p style="display:inline-block;padding-left:40px"></p>
+ 	</div>
+ 	<div id="b14">
+ 	<h6>Any <b>Comments</b>?:</h6>
+ 	<input type="text" name="txt123" id="txtbox2" style="width:1000px; height:40px; border-style: none none solid none;
+    border-color: #d3d3d3; font-size:25px;display:block;">
+    <button style="border: none ;" id="subBut2" ><span style=" color: #808080 ;padding: 15px 32px; text-decoration: none;font-size: 16px;display: block;float: center; ">Enter</span></button>
+
+ 	</div>
+ 	
+</form>
+
+</div>
+
+  <script type="text/javascript">
+  	$(function () {
+  		
+  $('input[name="rad1"]').on('click', function () {
+  	$("#span4").text("");
+	var currentVal = $('#txtbox1').val();
+    var newVal = currentVal + $(this).val();
+    $('#txtbox1').val(newVal);
+  	var abc=$(this).val();
+ 	$('<span class="closebtn chip" id="span2">'+abc+'  &times;</span>').appendTo('#span1');
+    $("#b11").toggle();
+    $("#b12").toggle();
+  });
+}); 
+  		$(function () {
+  $('input[name="rad2"]').on('click', function () {
+  	var currentVal = $('#txtbox1').val();
+    var newVal = currentVal + $(this).val();
+    $('#txtbox1').val(newVal);
+  var abc=$(this).val();
+    $('<span class="closebtn chip" id="span3">'+abc+'  &times;</span>').appendTo('#span1');
+    $("#b12").toggle();
+    $("#b13").toggle();
+  });
+}); 
+  		$(function () {
+  $('input[name="rad3"]').on('click', function () {
+  	var currentVal = $('#txtbox1').val();
+    var newVal = currentVal + $(this).val();
+    $('#txtbox1').val(newVal);
+  var abc=$(this).val();
+    $('<span class="closebtn chip" id="span3">'+abc+'  &times;</span>').appendTo('#span1');
+    $("#b13").toggle();
+    $("#b14").toggle();
+  });
+}); 
+
+	$("#span1").click(function () {
+    $("#span1").css("display", "none");
+    location.reload();
+});
+
+ $("#subBut1").click(function() {
+
+  $( "#form1" ).submit();
+   });
+
+  $("#subBut2").click(function() {
+  	var currentVal = $('#txtbox1').val();
+    var newVal = currentVal + $(this).val();
+    $('#txtbox1').val(newVal);
+  var abc=$("#txtbox2").val();
+    $('<span class="closebtn chip" id="span3">'+abc+'  &times;</span>').appendTo('#span1');
+   });
+
+  </script>
+</body>
+</html>
